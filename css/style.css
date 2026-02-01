@@ -3,7 +3,7 @@
 :root {
   --bg: #eef6ff;        
   --text: #0b1220;      
-  --muted: #334155;     
+  --muted: #0b1220;  
   --brand-1: #3b82f6;   
   --brand-2: #2563eb;  
   --card: #ffffff;      
@@ -571,3 +571,337 @@ button:hover { opacity: 0.9; }
 
 .site-nav { display: block; }
 .menu-toggle { display: none; }
+
+/* Time and attendance in employee profile page and clock*/
+
+.card{
+  background:#ffffff;
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.06);
+}
+
+.card h3{
+  margin:0 0 14px;
+  font-size:18px;
+  font-weight:600;
+}
+
+.info-row{
+  display:flex;
+  justify-content:space-between;
+  padding:10px 0;
+  border-bottom:1px solid #eef2f7;
+}
+
+.info-row:last-of-type{
+  border-bottom:none;
+  margin-bottom:12px;
+}
+
+.label{
+  font-size:14px;
+  font-weight:600;
+  color:#6b7280;
+}
+
+.value{
+  font-weight:600;
+  color:#111827;
+}
+
+.value.positive{
+  color:#047857;
+}
+
+.value.negative{
+  color:#b91c1c;
+}
+
+.attendance-table{
+  margin-top:8px;
+  width:100%;
+  border-collapse:collapse;
+  font-size:14px;
+}
+
+.attendance-table th{
+  font-family: inherit;
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:0;
+  text-transform:none;
+  color:var(--muted);
+}
+
+.attendance-table td{
+  padding:12px;
+  border-bottom:1px solid #e5e7eb;
+}
+
+.attendance-table tbody tr:nth-child(even){
+  background:#fcfcfd;
+}
+
+.attendance-table tbody tr:hover{
+  background:#f1f5f9;
+}
+
+.clock-section{
+  margin-top:16px;
+  padding-top:12px;
+  border-top:1px solid #eef2f7;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.clock-status{
+  font-size:14px;
+  color:#4b5563;
+}
+
+.clock-btn{
+  background:#2563eb;
+  color:#fff;
+  border:none;
+  padding:10px 14px;
+  border-radius:8px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.clock-btn.stop{
+  background:#dc2626;
+}
+
+.clock-btn:hover{
+  opacity:0.95;
+}
+.card{
+  background:#ffffff;
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.06);
+  border:1px solid #e5e7eb;
+}
+
+.section-title{
+  margin:0 0 14px;
+  font-size:18px;
+  font-weight:650;
+  color:#111827;
+}
+
+.info-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 12px;
+  margin-bottom:10px;
+  background:#f9fafb;
+  border:1px solid #eef2f7;
+  border-radius:10px;
+}
+
+.label{
+  font-size:14px;
+  font-weight:600;
+  color:#6b7280;
+}
+
+.value{
+  font-size:14px;
+  font-weight:650;
+  color:#111827;
+}
+
+.value.positive{
+  color:#047857;
+}
+
+.value.negative{
+  color:#b91c1c;
+}
+
+.attendance-table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  margin-top:6px;
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  overflow:hidden;
+  font-size:14px;
+}
+
+.attendance-table th{
+  text-align:left;
+  padding:12px 14px;
+  background:#f3f4f6;
+  color:#6b7280;
+  font-size:12px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  font-weight:800;
+  border-bottom:1px solid #e5e7eb;
+}
+
+.attendance-table td{
+  padding:12px 14px;
+  border-bottom:1px solid #eef2f7;
+  color:#111827;
+}
+
+.attendance-table tbody tr:nth-child(even){
+  background:#fcfcfd;
+}
+
+.attendance-table tbody tr:hover{
+  background:#eff6ff;
+}
+
+.attendance-table tbody tr:last-child td{
+  border-bottom:none;
+}
+
+td.positive{
+  color:#047857;
+  font-weight:700;
+}
+
+td.negative{
+  color:#b91c1c;
+  font-weight:700;
+}
+
+.clock-section{
+  max-width:100%;
+  margin-top:12px;
+  background:#ffffff;
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  padding:14px 16px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.06);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.clock-status{
+  margin:0;
+  font-size:14px;
+  color:#4b5563;
+}
+
+#clockStatus{
+  font-weight:700;
+  color:#111827;
+}
+
+.clock-btn{
+  background:#2563eb;
+  color:#fff;
+  border:none;
+  padding:10px 14px;
+  border-radius:10px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.clock-btn.stop{
+  background:#dc2626;
+}
+
+.clock-btn:hover{
+  opacity:0.95;
+}
+
+@media (max-width: 700px){
+  .info-row{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:6px;
+  }
+
+  .clock-section{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .clock-btn{
+    width:100%;
+  }
+}
+.section-head{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.section-dot{
+  width:10px;
+  height:10px;
+  border-radius:3px;
+  background:#2563eb;
+}
+
+.section-head + *{
+  border-top:none !important;
+}
+
+.card{
+  box-shadow:0 6px 20px rgba(0,0,0,0.06);
+}
+
+.card > .info-row:first-of-type{
+  border-top:none !important;
+}
+
+.section-title{
+  border:0 !important;
+  box-shadow:none !important;
+  background:transparent !important;
+
+}
+
+.card > .info-row:first-of-type{
+  border-top:0 !important;
+  box-shadow:none !important;
+}
+
+.card{
+  background-clip: padding-box;
+}
+
+.card .label,
+.card .clock-status,
+.card th{
+  color:#0b1220;
+}
+
+.attendance-table th{
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #0b1220;
+  background: #ffffff;
+}
+.section-head{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  width:100%;
+  padding-bottom:0.75rem;
+  margin-bottom:1rem;
+  border-bottom:1px solid rgba(0,0,0,0.06);
+}
+
+.section-head h2{
+  border-bottom:none;
+  padding-bottom:0;
+  margin-bottom:0;
+}

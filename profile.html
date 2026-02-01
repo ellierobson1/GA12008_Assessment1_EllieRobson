@@ -6,17 +6,161 @@
   <title>HRIS | Contact</title>
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 
 
+<body>
+    <header class="site-header">
+  <div class="container header-inner">
+
+    <a href="index.html" class="logo-link" aria-label="Go to home">
+  <img src="assets/images/logo.png" alt="HRIS logo" class="site-logo">
+</a>
+</body>
+
+<div class="header-left">
+      <h1>Human Resource Information System</h1>
+      <p class="subtitle">Internal HR portal for policies, benefits, training, and support.</p>
+    </div>
+
+    <div class="auth-actions">
+      <span class="auth-name">Ellie Robson</span>
+      <a class="auth-btn" href="login.html">Log out</a>
+    </div>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+  ☰ Menu
+</button>
+
+  </div>
+</header>
+
+<nav class="site-nav" id="mobile-nav">
+  <div class="container">
+    <ul class="nav-list">
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="info.html">Knowledge Base</a></li>
+      <li><a class="nav-link" href="profile.html" aria-current="page">Profile</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container">
+
+    <section class="alert alert-warning">
+  <strong>Action required:</strong> You have mandatory training expiring within the next 14 days.
+  Please complete the required refresher to remain compliant.
+</section>
+
+
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="index.html">Home</a> / <span>Profile</span>
+  </nav>
+
+  <section class="card">
+    <h2>Employee Profile</h2>
+    <p class="muted">This section provides an overview of your employee profile, including your role, key areas of responsibility, and the qualifications and experience relevant to your position.</p>
   </section>
 
-  </main>
+  <section class="grid-2">
+    <section class="card profile-card">
+      <h3>Employee Details</h3>
+      <ul class="detail-list">
+        <li><span class="label">Name</span><span class="value">Ellie Robson</span></li>
+        <li><span class="label">Role</span><span class="value">HR Assistant</span></li>
+        <li><span class="label">Department</span><span class="value">Human Resources</span></li>
+        <li><span class="label">Employment Type</span><span class="value">Full-time</span></li>
+        <li><span class="label">Status</span><span class="value">Active</span></li>
+        <li><span class="label">Salary</span><span class="value">£32,000</span></li>
+      </ul>
+    </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 HR System — Designed and developed by Ellie.</p>
-    </div>
-  </footer>
+    <section class="card profile-card">
+      <h3>Skills &amp; Training</h3>
+      <ul>
+        <li>HR onboarding procedures</li>
+        <li>Data protection awareness</li>
+        <li>Employee support and communication</li>
+        <li>Basic reporting and record keeping</li>
+        <li>Employee profile management</li>
+        <li>Training Compliance</li>
+        <li>Data entry</li>
+      </ul>
+    </section>
+  </section>
+
+  <section class="card">
+  <h3>Training Courses Status</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Course</th>
+        <th>Status</th>
+        <th>Due</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Data Protection</td>
+        <td><span class="status-pill">Completed</span></td>
+        <td>Jan 2026</td>
+      </tr>
+
+      <tr>
+        <td>Health &amp; Safety</td>
+        <td><span class="status-pill">Completed</span></td>
+        <td>Aug 2026</td>
+      </tr>
+
+      <tr>
+        <td>Equality &amp; Diversity</td>
+        <td><span class="status-pill status-due">Due</span>
+        <td>Mar 2026</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<section class="card">
+  <h3>Leave Summary for 2026</h3>
+  <ul class="detail-list">
+    <li><span class="label">Entitlement</span><span class="value">25 days</span></li>
+    <li><span class="label">Taken</span><span class="value">10 days</span></li>
+    <li><span class="label">Remaining</span><span class="value">15 days</span></li>
+  </ul>
+  <div class="leave-actions">
+  <a href="#" class="btn">Submit Leave Request</a>
+</div>
+
+</section>
+<section class="card">
+  <h3>Emergency Contact</h3>
+  <ul class="detail-list">
+    <li><span class="label">Name</span><span class="value">James Robson</span></li>
+    <li><span class="label">Relationship</span><span class="value">Brother</span></li>
+    <li><span class="label">Phone</span><span class="value">07765488234</span></li>
+  </ul>
+</section>
+
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 HRIS — Designed and developed by Ellie.</p>
+  </div>
+</footer>
+<script>
+  const btn = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".site-nav");
+
+  btn.addEventListener("click", () => {
+    const open = nav.classList.toggle("is-open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+</script>
+
+</body>
+</html>

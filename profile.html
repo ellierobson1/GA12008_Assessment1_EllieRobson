@@ -3,48 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HRIS | Contact</title>
+  <title>Core HR | Profile</title>
   <link rel="icon" href="assets/images/favicon.png" type="image/png">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=5001" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-
-
 <body>
-    <header class="site-header">
-  <div class="container header-inner">
 
-    <a href="index.html" class="logo-link" aria-label="Go to home">
-  <img src="assets/images/logo.png" alt="HRIS logo" class="site-logo">
-</a>
-</body>
+<div class="topbar">
+  <header class="site-header">
+    <div class="container header-inner">
 
-<div class="header-left">
-      <h1>Human Resource Information System</h1>
-      <p class="subtitle">Internal HR portal for policies, benefits, training, and support.</p>
-    </div>
+      <a href="index.html" class="logo-link" aria-label="Go to home">
+        <img src="assets/images/logo.png" alt="HRIS logo" class="site-logo">
+      </a>
 
-    <div class="auth-actions">
-      <span class="auth-name">Ellie Robson</span>
-      <a class="auth-btn" href="login.html">Log out</a>
-    </div>
-<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
-  ☰ Menu
-</button>
+      <div class="auth-actions">
+       <span class="auth-name">Ellie Robson</span>
+       <a class="auth-btn" href="login.html">Log out</a>
+     </div>
 
+     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+       ☰ Menu
+     </button>
   </div>
 </header>
-
-<nav class="site-nav" id="mobile-nav">
-  <div class="container">
-    <ul class="nav-list">
-      <li><a class="nav-link" href="index.html">Home</a></li>
-      <li><a class="nav-link" href="info.html">Knowledge Base</a></li>
-      <li><a class="nav-link" href="profile.html" aria-current="page">Profile</a></li>
-      <li><a class="nav-link" href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+      
+      <nav class="site-nav" id="mobile-nav">
+      <div class="container">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="info.html">Knowledge Base</a></li>
+          <li><a class="nav-link" href="profile.html" aria-current="page">Profile</a></li>
+          <li><a class="nav-link" href="attendance.html">Time & Attendance</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
 <main class="container">
 
@@ -63,66 +59,6 @@
     <p class="muted">This section provides an overview of your employee profile, including your role, key areas of responsibility, and the qualifications and experience relevant to your position.</p>
   </section>
 
-  <section class="card">
-  <div class="section-head">
-  <h2 class="section-heading">Time &amp; Attendance</h2>
-</div>
-
-  <div class="info-row">
-    <span class="label">Work pattern</span>
-    <span class="value">Mon - Wed, 9:00–17:00</span>
-  </div>
-
-  <div class="info-row">
-    <span class="label">Contracted hours</span>
-    <span class="value">21 hours per week</span>
-  </div>
-
-  <div class="info-row">
-    <span class="label">Overtime balance</span>
-    <span class="value positive">+1.5 hours</span>
-  </div>
-
-  <table class="attendance-table">
-    <thead>
-      <tr>
-        <th>Week</th>
-        <th>Contracted</th>
-        <th>Logged</th>
-        <th>Overtime</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>20th - 26th Jan</td>
-        <td>21h</td>
-        <td>22.5h</td>
-        <td class="positive">+1.5h</td>
-      </tr>
-      <tr>
-        <td>13th - 19th Jan</td>
-        <td>21h</td>
-        <td>21h</td>
-        <td>0h</td>
-      </tr>
-      <tr>
-        <td>6th - 12th Jan</td>
-        <td>21h</td>
-        <td>19h</td>
-        <td class="negative">-2h</td>
-      </tr>
-    </tbody>
-  </table>
-
-    <div class="clock-section">
-    <p class="clock-status">
-      Status: <span id="clockStatus">Not clocked in</span>
-    </p>
-    <button id="clockButton" class="clock-btn">
-      Start Clock
-    </button>
-  </div>
-</section>
 
   <section class="grid-2">
     <section class="card profile-card">
@@ -184,16 +120,6 @@
     </tbody>
   </table>
 </section>
-<section class="card">
-  <h3>Leave Summary for 2026</h3>
-  <ul class="detail-list">
-    <li><span class="label">Entitlement</span><span class="value">25 days</span></li>
-    <li><span class="label">Taken</span><span class="value">10 days</span></li>
-    <li><span class="label">Remaining</span><span class="value">15 days</span></li>
-  </ul>
-  <div class="leave-actions">
-  <a href="#" class="btn">Submit Leave Request</a>
-</div>
 
 </section>
 <section class="card">
@@ -210,7 +136,7 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p>&copy; 2026 HRIS — Designed and developed by Ellie.</p>
+    <p>&copy; 2026 Core HR — Designed and developed by Ellie.</p>
   </div>
 </footer>
 <script>

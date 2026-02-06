@@ -3,35 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HRIS | Knowledge Base</title>
+  <title>CORE HR | Knowledge Base</title>
   <link rel="icon" href="assets/images/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.css?v=5001" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 </head>
 
-<body></body>
-<header class="site-header">
-  <div class="container header-inner">
+<body>
 
-    <a href="index.html" class="logo-link" aria-label="Go to home">
-  <img src="assets/images/logo.png" alt="HRIS logo" class="site-logo">
-</a>
+<div class="topbar">
+  <header class="site-header">
+    <div class="container header-inner">
 
+      <a href="index.html" class="logo-link" aria-label="Go to home">
+        <img src="assets/images/logo.png" alt="HRIS logo" class="site-logo">
+      </a>
 
-    <div class="header-left">
-      <h1>Human Resource Information System</h1>
-      <p class="subtitle">Internal HR portal for policies, benefits, training, and support.</p>
-    </div>
+      <div class="auth-actions">
+       <span class="auth-name">Ellie Robson</span>
+       <a class="auth-btn" href="login.html">Log out</a>
+     </div>
 
-    <div class="auth-actions">
-      <span class="auth-name">Ellie Robson</span>
-      <a class="auth-btn" href="login.html">Log out</a>
-    </div>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
-  ☰ Menu
-</button>
-
+     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+       ☰ Menu
+     </button>
   </div>
 </header>
 
@@ -41,10 +36,12 @@
         <li><a class="nav-link" href="index.html">Home</a></li>
         <li><a class="nav-link" href="info.html" aria-current="page">Knowledge Base</a></li>
         <li><a class="nav-link" href="profile.html">Profile</a></li>
+        <li><a class="nav-link" href="attendance.html">Time & Attendance</a></li>
         <li><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
+  <div>
 
   <main class="container">
     <nav class="breadcrumbs" aria-label="Breadcrumb">
@@ -52,7 +49,6 @@
     </nav>
 
     <section class="layout">
-      <!-- MAIN COLUMN -->
       <section class="layout-main">
 
         <section class="card">
@@ -61,7 +57,7 @@
 
           <form class="searchbar" action="#" method="get" role="search">
             <label class="sr-only" for="q">Search</label>
-            <input id="q" name="q" type="search" placeholder="Search policies, benefits, training (demo)" />
+            <input id="q" name="q" type="search" placeholder="Search policies, benefits, training" />
             <button type="submit">Search</button>
           </form>
         </section>
@@ -143,9 +139,7 @@
 
       </section>
 
-      <!-- SIDEBAR COLUMN -->
       <aside class="layout-side">
-
         <section class="card on-this-page">
           <h3>On this page</h3>
           <ul class="plain-list">
@@ -206,7 +200,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 HRIS — Designed and developed by Ellie.
+      <p>&copy; 2026 Core HR — Designed and developed by Ellie.
     </div>
   </footer>
 

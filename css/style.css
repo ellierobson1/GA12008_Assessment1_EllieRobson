@@ -448,11 +448,6 @@ body{
 }
 
 /*Tables*/
-.table-wrap {
-  overflow-x: auto;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-}
 
 table {
   width: 100%;
@@ -1213,12 +1208,12 @@ td.negative{
   }
 }
 
-/* Mobile time and ettance table tidy up*/
+/* Mobile time and attendance tidy up*/
 
 @media (max-width: 700px) {
   .table-wrap {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin: 0;
+    padding: 0.5rem;
   }
 }
 
@@ -1307,4 +1302,41 @@ td.negative{
     margin-left: 2.1rem;
     margin-top: 0.4rem;
   }
+}
+
+/* Knowledge base responsive*/
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+
+/*Padding addition*/
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .layout {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+/* Stops horizontal scroll on mobile/tablet devices*/
+
+html, body {
+  overflow-x: hidden;
 }

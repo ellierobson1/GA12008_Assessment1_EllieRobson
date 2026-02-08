@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Core HR | Time and Attendance</title>
     <link rel="icon" href="assets/images/favicon.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css?v=5001" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -31,7 +31,7 @@
             </div>
         </header>
 
-        <nav class="site-nav" id="mobile-nav">
+        <nav class="site-nav" id="mobile-nav" aria-label="Primary">
             <div class="container">
                 <ul class="nav-list">
                     <li><a class="nav-link" href="index.html">Home</a></li>
@@ -78,7 +78,7 @@
                 <p class="clock-status">
                     Status: <span id="clockStatus">Not clocked in</span>
                 </p>
-                <button id="clockButton" class="clock-btn">
+                <button id="clockButton" class="clock-btn" type="button">
                     Start Clock
                 </button>
             </div>
@@ -136,14 +136,25 @@
                 </tbody>
             </table>
         </section>
+   
     </main>
 
     <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2026 Core HR — Designed and developed by Ellie.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2026 Core HR — Designed and developed by Ellie.</p>
+      </div>
     </footer>
 
-</body>
+    <script>
+      const btn = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".site-nav");
 
+     if (btn && nav) {
+      btn.addEventListener("click", () => {
+        const open = nav.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+  </script>
+ </body>
 </html>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Core HR | Profile</title>
   <link rel="icon" href="assets/images/favicon.png" type="image/png">
-  <link rel="stylesheet" href="css/style.css?v=5001" />
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -30,25 +30,25 @@
   </div>
 </header>
       
-      <nav class="site-nav" id="mobile-nav">
-      <div class="container">
-        <ul class="nav-list">
-          <li><a class="nav-link" href="index.html">Home</a></li>
-          <li><a class="nav-link" href="info.html">Knowledge Base</a></li>
-          <li><a class="nav-link" href="profile.html" aria-current="page">Profile</a></li>
-          <li><a class="nav-link" href="attendance.html">Time & Attendance</a></li>
-          <li><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+<nav class="site-nav" id="mobile-nav" aria-label="Primary">
+  <div class="container">
+    <ul class="nav-list">
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="info.html" aria-current="page">Knowledge Base</a></li>
+      <li><a class="nav-link" href="profile.html">Profile</a></li>
+      <li><a class="nav-link" href="attendance.html">Time &amp; Attendance</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+ </nav>
+</div>
 
 <main class="container">
 
-    <section class="alert alert-warning">
+    <div class="alert alert-warning">
   <strong>Action required:</strong> You have mandatory training expiring within the next 14 days.
   Please complete the required refresher to remain compliant.
-</section>
-
+</div>
 
   <nav class="breadcrumbs" aria-label="Breadcrumb">
     <a href="index.html">Home</a> / <span>Profile</span>
@@ -59,8 +59,47 @@
     <p class="muted">This section provides an overview of your employee profile, including your role, key areas of responsibility, and the qualifications and experience relevant to your position.</p>
   </section>
 
+   <section class="card">
+  <h2>My Tasks</h2>
 
-  <section class="grid-2">
+  <ul class="task-list">
+    <li>
+      <label>
+        <input type="checkbox">
+        <span class="task-text">Complete Data Protection refresher</span>
+        <span class="task-meta">
+          <span class="pill pill-high">High</span>
+          <span class="pill">Due 31 Jan</span>
+        </span>
+      </label>
+    </li>
+
+    <li>
+      <label>
+        <input type="checkbox">
+        <span class="task-text">Review updated Annual Leave policy</span>
+        <span class="task-meta">
+          <span class="pill pill-med">Medium</span>
+          <span class="pill">Due 5 Feb</span>
+        </span>
+      </label>
+    </li>
+
+    <li>
+      <label>
+        <input type="checkbox">
+        <span class="task-text">Update emergency contact details</span>
+        <span class="task-meta">
+          <span class="pill pill-low">Low</span>
+          <span class="pill">No due date</span>
+        </span>
+      </label>
+    </li>
+  </ul>
+</section>
+
+
+  <div class="grid-2">
     <section class="card profile-card">
       <h3>Employee Details</h3>
       <ul class="detail-list">
@@ -72,6 +111,7 @@
         <li><span class="label">Salary</span><span class="value">£32,000</span></li>
       </ul>
     </section>
+
 
     <section class="card profile-card">
       <h3>Skills &amp; Training</h3>
@@ -85,7 +125,8 @@
         <li>Data entry</li>
       </ul>
     </section>
-  </section>
+
+  </div>
 
   <section class="card">
   <h3>Training Courses Status</h3>
@@ -114,12 +155,11 @@
 
       <tr>
         <td>Equality &amp; Diversity</td>
-        <td><span class="status-pill status-due">Due</span>
+        <td><span class="status-pill status-due">Due</span></td>
         <td>Mar 2026</td>
       </tr>
     </tbody>
   </table>
-</section>
 
 </section>
 <section class="card">
@@ -130,24 +170,24 @@
     <li><span class="label">Phone</span><span class="value">07765488234</span></li>
   </ul>
 </section>
-
-</section>
 </main>
 
-<footer class="site-footer">
-  <div class="container">
-    <p>&copy; 2026 Core HR — Designed and developed by Ellie.</p>
-  </div>
-</footer>
-<script>
-  const btn = document.querySelector(".menu-toggle");
-  const nav = document.querySelector(".site-nav");
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Core HR — Designed and developed by Ellie.</p>
+      </div>
+    </footer>
 
-  btn.addEventListener("click", () => {
-    const open = nav.classList.toggle("is-open");
-    btn.setAttribute("aria-expanded", open ? "true" : "false");
-  });
-</script>
+    <script>
+      const btn = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".site-nav");
 
-</body>
+     if (btn && nav) {
+      btn.addEventListener("click", () => {
+        const open = nav.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+  </script>
+ </body>
 </html>

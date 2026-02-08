@@ -1,123 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HRIS | Knowledge Base</title>
+  <title>Core HR | Contact</title>
   <link rel="icon" href="assets/images/favicon.png" type="image/png">
-  <link rel="stylesheet" href="css/style.css?v=5001" />
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
+  <div class="topbar">
+    <header class="site-header">
+      <div class="container header-inner">
 
-<div class="topbar">
-  <header class="site-header">
-    <div class="container header-inner">
+        <a href="index.html" class="logo-link" aria-label="Go to home">
+          <img src="assets/images/logo.png" alt="HRIS logo" class="site-logo">
+        </a>
 
-      <a href="index.html" class="logo-link" aria-label="Go to home">
-        <img src="assets/images/logo.png" alt="HRIS logo" class="site-logo">
-      </a>
+        <div class="auth-actions">
+          <span class="auth-name">Ellie Robson</span>
+          <a class="auth-btn" href="login.html">Log out</a>
+        </div>
 
-      <div class="auth-actions">
-       <span class="auth-name">Ellie Robson</span>
-       <a class="auth-btn" href="login.html">Log out</a>
-     </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+          ☰ Menu
+        </button>
+      </div>
+    </header>
 
-     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
-       ☰ Menu
-     </button>
-  </div>
-</header>
-
-  <nav class="site-nav" id="mobile-nav" aria-label="Primary">
-    <div class="container">
-      <ul class="nav-list">
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="info.html">Knowledge Base</a></li>
-        <li><a class="nav-link" href="profile.html">Profile</a></li>
-        <li><a class="nav-link" href="attendance.html">Time & Attendance</a></li>
-        <li><a class="nav-link" href="contact.html" aria-current="page">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <main class="container">
-
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a href="index.html">Home</a> / <span>Contact</span>
+    <nav class="site-nav" id="mobile-nav" aria-label="Primary">
+      <div class="container">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="info.html">Knowledge Base</a></li>
+          <li><a class="nav-link" href="profile.html">Profile</a></li>
+          <li><a class="nav-link" href="attendance.html">Time & Attendance</a></li>
+          <li><a class="nav-link" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </div>
     </nav>
+  </div>
 
-    <section class="card">
-      <h2>Contact HR</h2>
-      <p class="muted">
-        Please fill in this form to submit a general HR enquiry. We aim to get back to you in 2 working days.
-      <p class="muted"><small>* Required fields</small></p>
+    <main class="container">
 
-      <form class="form" action="#" method="post">
-        <label for="name">Name <span class="required">*</span></label>
-        <input id="name" name="name" type="text" required />
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> / <span>Contact</span>
+      </nav>
 
-        <label for="email">Email <span class="required">*</span></label>
-        <input id="email" name="email" type="email" required />
+      <section class="card">
+        <h2>Contact HR</h2>
+        <p class="muted">
+          Please fill in this form to submit a general HR enquiry. We aim to get back to you in 2 working days.
+        </p>
+        <p class="muted"><small>* Required fields</small></p>
 
-        <label for="topic">Enquiry Type</label>
-        <select id="topic" name="topic">
-          <option value="">Select a topic (optional)</option>
-          <option>Leave &amp; absence</option>
-          <option>Benefits</option>
-          <option>Training</option>
-          <option>Payroll</option>
-          <option>Other</option>
-        </select>
+        <form class="form" action="#" method="post">
+          <label for="name">Name <span class="required">*</span></label>
+          <input id="name" name="name" type="text" required />
 
-        <label for="message">Message <span class="required">*</span></label>
-        <textarea id="message" name="message" rows="6" required></textarea>
+          <label for="email">Email <span class="required">*</span></label>
+          <input id="email" name="email" type="email" required />
 
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+          <label for="topic">Enquiry Type</label>
+          <select id="topic" name="topic">
+            <option value="">Select a topic (optional)</option>
+            <option>Leave &amp; absence</option>
+            <option>Benefits</option>
+            <option>Training</option>
+            <option>Payroll</option>
+            <option>Other</option>
+          </select>
 
-    <section class="card">
-      <h2>FAQs</h2>
+          <label for="message">Message <span class="required">*</span></label>
+          <textarea id="message" name="message" rows="6" required></textarea>
 
-      <details class="faq">
-        <summary>How long does HR take to respond?</summary>
-        <p>We aim to respond within 2 working days.</p>
-      </details>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
 
-      <details class="faq">
-        <summary>Where do I find annual leave information?</summary>
-        <p>Go to the Knowledge Base page and check the Annual Leave section.</p>
-      </details>
+      <section class="card">
+        <h2>FAQs</h2>
 
-      <details class="faq">
-        <summary>Who approves my leave request?</summary>
-        <p>Your line manager approves requests based on staffing needs.</p>
-      </details>
-    </section>
+        <details class="faq">
+          <summary>How long does HR take to respond?</summary>
+          <p>We aim to respond within 2 working days.</p>
+        </details>
 
-    <section class="card">
-      <h2>HR Contact Details</h2>
-      <ul class="plain-list">
-        <li><strong>Office Hours:</strong> Mon - Fri, 9:00 - 17:00</li>
-        <li><strong>Call us:</strong>
-          <a href="tel:+441382000000">01382 000000</a>
-        <li> <strong>Email us:</strong>
-          <a href="mailto:info@hr.co.uk">info@hr.co.uk</a>
-      </ul>
+        <details class="faq">
+          <summary>Where do I find annual leave information?</summary>
+          <p>Go to the Knowledge Base page and check the Annual Leave section.</p>
+        </details>
 
-      </ul>
+        <details class="faq">
+          <summary>Who approves my leave request?</summary>
+          <p>Your line manager approves requests based on staffing needs.</p>
+        </details>
+      </section>
 
-      <p class="muted"><small>Last updated: 24 January 2026</small></p>
-    </section>
+      <section class="card">
+        <h2>HR Contact Details</h2>
 
-    </section>
+        <ul class="plain-list">
+          <li><strong>Office Hours:</strong> Mon - Fri, 9:00 - 17:00</li>
+          <li><strong>Call us:</strong> <a href="tel:+441382000000">01382 000000</a></li>
+          <li><strong>Email us:</strong> <a href="mailto:info@hr.co.uk">info@hr.co.uk</a></li>
+        </ul>
 
-  </main>
+        <p class="muted"><small>Last updated: 24 January 2026</small></p>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Core HR — Designed and developed by Ellie.</p>
-    </div>
-  </footer>
+      </section>
+
+     </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Core HR — Designed and developed by Ellie.</p>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".site-nav");
+
+     if (btn && nav) {
+      btn.addEventListener("click", () => {
+        const open = nav.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+  </script>
+ </body>
+</html>

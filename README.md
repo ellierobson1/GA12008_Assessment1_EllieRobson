@@ -47,7 +47,7 @@ The website represents a **Business Information System interface** and focuses o
 
 OR  
 
-View via GitHub Pages:  
+View via GitHub Pages:  https://ellierobson1.github.io/GA12008_Assessment1_EllieRobson/
 
 ## Notes
 

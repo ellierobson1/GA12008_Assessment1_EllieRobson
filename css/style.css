@@ -636,742 +636,713 @@ button:hover {
   cursor: pointer;
   font-weight: 600;
   list-style: none;
-}
 
-.faq summary::-webkit-details-marker {
-  display: none;
-}
-
-.faq summary::after {
-  content: "＋";
-  float: right;
-  font-weight: bold;
-}
-
-.faq[open] summary::after {
-  content: "−";
-}
-
-.faq p {
-  margin: 0.6rem 0 0;
-  color: var(--muted);
-}
-
-/*Task checklist*/
-.task-list {
-  list-style: none;
-  padding: 0;
-  margin: 0.75rem 0 0;
-}
-
-.task-list li {
-  padding: 0.75rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-}
-
-.task-list li:last-child {
-  border-bottom: 0;
-}
-
-.task-list label {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  cursor: pointer;
-  font-weight: 500;
-}
-
-.task-list input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-  accent-color: var(--brand-1);
-}
-
-.task-list label {
-  display: grid;
-  grid-template-columns: 18px 1fr auto;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.task-text {
-  font-weight: 600;
-}
-
-.task-meta {
-  display: flex;
-  gap: 0.4rem;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-.pill {
-  padding: 0.2rem 0.55rem;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.8);
-  color: var(--muted);
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-.pill-high {
-  border-color: rgba(220, 38, 38, 0.35);
-  background: rgba(220, 38, 38, 0.10);
-  color: #7f1d1d;
-}
-
-.pill-med {
-  border-color: rgba(245, 158, 11, 0.35);
-  background: rgba(245, 158, 11, 0.12);
-  color: #7c2d12;
-}
-
-.pill-low {
-  border-color: rgba(34, 197, 94, 0.35);
-  background: rgba(34, 197, 94, 0.12);
-  color: #14532d;
-}
-
-.menu-toggle {
-  display: none;
-}
-
-.site-nav {
-  display: block;
-}
-
-/*Time and attendance*/
-
-.card h3 {
-  margin: 0 0 14px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.info-row:last-of-type {
-  border-bottom: none;
-  margin-bottom: 12px;
-}
-
-.value.positive {
-  color: #047857;
-}
-
-.value.negative {
-  color: #b91c1c;
-}
-
-.attendance-table {
-  margin-top: 8px;
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 14px;
-}
-
-.attendance-table tbody tr:nth-child(even) {
-  background: #fcfcfd;
-}
-
-.attendance-table tbody tr:hover {
-  background: #f1f5f9;
-}
-
-.clock-btn.stop {
-  background: #dc2626;
-}
-
-.clock-btn:hover {
-  opacity: 0.95;
-}
-
-/* Card for time and attendance section only*/
-
-.attendance-page .card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  border: 1px solid #e5e7eb;
-  margin-bottom: 20px;
-}
-
-.section-title {
-  margin: 0 0 14px;
-  font-size: 18px;
-  font-weight: 650;
-  color: #111827;
-}
-
-.info-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 12px;
-  margin-bottom: 10px;
-  background: #f9fafb;
-  border: 1px solid #eef2f7;
-  border-radius: 10px;
-  border-bottom: 1px solid #eef2f7
-}
-
-.label {
-  font-size: 14px;
-  font-weight: 600;
-  color: #6b7280;
-}
-
-.value {
-  text-align: right;
-  font-size: 14px;
-  font-weight: 650;
-  color: #111827;
-}
-
-.value.positive {
-  color: #047857;
-}
-
-.value.negative {
-  color: #b91c1c;
-}
-
-.attendance-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  margin-top: 6px;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  overflow: hidden;
-  font-size: 14px;
-}
-
-.attendance-table th {
-  text-align: left;
-  padding: 12px 14px;
-  background: #f3f4f6;
-  color: #6b7280;
-  font-size: 12px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  font-weight: 800;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.attendance-table td {
-  padding: 12px 14px;
-  border-bottom: 1px solid #eef2f7;
-  color: #111827;
-}
-
-.attendance-table tbody tr:nth-child(even) {
-  background: #fcfcfd;
-}
-
-.attendance-table tbody tr:hover {
-  background: #eff6ff;
-}
-
-.attendance-table tbody tr:last-child td {
-  border-bottom: none;
-}
-
-td.positive {
-  color: #047857;
-  font-weight: 700;
-}
-
-td.negative {
-  color: #b91c1c;
-  font-weight: 700;
-}
-
-.clock-section {
-  margin-top: 12px;
-  padding-top: 12px;
-  border: 1px solid #e5e7eb;
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  max-width: 100%;
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 14px 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  gap: 12px;
-  flex-direction: column;;
-}
-
-.clock-status {
-  margin: 0;
-  font-size: 14px;
-  color: #4b5563;
-}
-
-#clockStatus {
-  font-weight: 700;
-  color: #111827;
-}
-
-.clock-btn {
-  background: #2563eb;
-  color: #fff;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 10px;
-  font-weight: 700;
-  cursor: pointer;
-  width: 100%;
-}
-
-.clock-btn.stop {
-  background: #dc2626;
-}
-
-.clock-btn:hover {
-  opacity: 0.95;
-}
-
-@media (max-width: 700px) {
-  .info-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-  }
-
-  .clock-section {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .clock-btn {
-    width: 100%;
-  }
-}
-
-.section-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 3px;
-  background: #2563eb;
-}
-
-.section-head+* {
-  border-top: none !important;
-}
-
-.card {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-}
-
-.card>.info-row:first-of-type {
-  border-top: none !important;
-}
-
-.section-title {
-  border: 0 !important;
-  box-shadow: none !important;
-  background: transparent !important;
-
-}
-
-.card>.info-row:first-of-type {
-  border-top: 0 !important;
-  box-shadow: none !important;
-}
-
-.card {
-  background-clip: padding-box;
-}
-
-.card .label,
-.card .clock-status,
-.card th {
-  color: #0b1220;
-}
-
-.attendance-table th {
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0;
-  text-transform: none;
-  color: #0b1220;
-  text-align: left;
-  padding: 12px 14px;
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb
-}
-
-.section-head {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  padding-bottom: 0.75rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-}
-
-.section-head h2 {
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-/*List styling */
-
-.card ul:not(.announcements):not(.task-list):not(.action-list):not(.plain-list):not(.skill-list) {
-  list-style: none;
-  padding: 0;
-  margin: 0.75rem 0 0;
-  display: grid;
-  gap: 0.6rem;
-}
-
-.card ul:not(.announcements):not(.task-list):not(.action-list):not(.plain-list):not(.skill-list) li {
-  margin: 0;
-  padding: 0.65rem 0.75rem;
-  border: 1px solid rgba(2, 6, 23, 0.06);
-  border-radius: 12px;
-  background: rgba(37, 99, 235, 0.04);
-  font-weight: 600;
-}
-
-/*Homepage hero*/
-.hero-card {
-  padding: 2rem;
-  background: #ffffff;
-  border: 1px solid rgba(2, 6, 23, 0.08);
-  border-radius: 16px;
-  box-shadow: 0 12px 32px rgba(2, 6, 23, 0.08);
-}
-
-/*Heading*/
-
-.hero-card {
-  padding: 2rem;
-  background: #ffffff;
-  border: 1px solid rgba(2, 6, 23, 0.08);
-  border-radius: 16px;
-  box-shadow: 0 12px 32px rgba(2, 6, 23, 0.08);
   position: relative;
-  overflow: hidden;
+  padding-right: 2rem;
+
 }
 
-.hero-card h2 {
-  font-size: 1.45rem;
-  font-weight: 700;
-  letter-spacing: -0.015em;
-  margin-bottom: 0.4rem;
+  .faq summary:-webkit-details-marker {
+  display: none;
 }
 
-/*Short intro text*/
-.hero-card p {
-  max-width: 70ch;
-  font-size: 1rem;
-  line-height: 1.65;
-  color: #334155;
-  margin-bottom: 1rem;
-}
-
-/*Last updated*/
-.hero-card .last-updated {
-  display: inline-block;
-  margin-top: 0.75rem;
-  padding: 0.35rem 0.65rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #1e3a8a;
-  background: rgba(37, 99, 235, 0.08);
-  border: 1px solid rgba(37, 99, 235, 0.25);
-  border-radius: 999px;
-}
-
-/*Gradient accent on welcome homepage box*/
-.hero-card::after {
-  content: "";
+ .faq summary::after {
+  content: "＋";
+  font-weight: bold;
   position: absolute;
-  top: -50%;
-  right: -25%;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle at center,
-      rgba(37, 99, 235, 0.32),
-      rgba(37, 99, 235, 0.14),
-      rgba(37, 99, 235, 0.04),
-      transparent 75%);
-  pointer-events: none;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/* Stronger card header */
-.card h2 {
-  padding-bottom: 0.85rem;
-  margin-bottom: 1.1rem;
-  border-bottom: 1px solid rgba(2, 6, 23, 0.08);
-}
-
-/* Footer styling*/
-
-.site-footer {
-  background: #f1f5f9;
-  color: #475569;
-  border-top: 1px solid #e2e8f0;
-  margin-top: 3rem;
-}
-
-.site-footer .container {
-  padding: 1.25rem 1rem;
-}
-
-.site-footer p {
-  margin: 0;
-  font-size: 0.85rem;
-  text-align: center;
-  opacity: 0.85;
-}
-
-/* System overview homepage*/
-
-.card.system-overview {
-  background: linear-gradient(135deg,
-      rgba(37, 99, 235, 0.06),
-      rgba(255, 255, 255, 0.95));
-  border-left: 5px solid #2563eb;
-}
-
-/* Leave summary on time and attendance page*/
-
-.leave-summary {
-  background: linear-gradient(135deg,
-      rgba(37, 99, 235, 0.06),
-      rgba(255, 255, 255, 0.95));
-}
-
-.stat-card {
-  background: #fff;
-  border: 1px solid rgba(2, 6, 23, 0.08);
-  border-radius: 12px;
-  padding: 1rem;
-  text-align: center;
-}
-
-.stat-label {
-  display: block;
-  font-size: 0.85rem;
-  color: #475569;
-  margin-bottom: 0.25rem;
-}
-
-.stat-value {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: #2563eb;
-}
-
-/* Fix issues with line appearing under headings twice*/
-
-.section-head h2,
-.section-head .section-heading {
-  border-bottom: 0 !important;
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-/* Menu fix for mobile*/
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: inline-block;
+  .faq[open] summary::after {
+    content: "−";
   }
 
-  .site-nav {
-    display: none;
+  .faq p {
+    margin: 0.6rem 0 0;
+    color: var(--muted);
   }
 
-  .site-nav.is-open {
-    display: block;
+  /*Task checklist*/
+  .task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0 0;
   }
 
-  .auth-actions {
-    display: none;
+  .task-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   }
 
-  .nav-list {
-    flex-direction: column;
-    align-items: stretch;
+  .task-list li:last-child {
+    border-bottom: 0;
   }
 
-  .nav-link {
-    display: block;
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .site-header {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-/* Mobile leave section tidy up*/
-
-@media (max-width: 700px) {
-  .grid-3 {
-    grid-template-columns: 1fr;
-  }
-
-  .stat-card {
-    text-align: left;
-  }
-
-  .stat-value {
-    font-size: 1.25rem;
-  }
-}
-
-/* Mobile profile tidy up boxes */
-
-@media (max-width: 700px) {
-  .grid-2 {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Mobile time and attendance tidy up*/
-
-@media (max-width: 700px) {
-  .table-wrap {
-    margin: 0;
-    padding: 0.5rem;
-  }
-}
-
-
-@media (max-width: 900px) {
-  .layout>*>.card {
-    margin-top: 1.25rem;
-  }
-
-  .layout>*>.card:first-child {
-    margin-top: 0;
-  }
-}
-
-.card {
-  margin: 1.25rem 0;
-}
-
-/*On this page, knowledge base*/
-
-.on-this-page .plain-list {
-  margin-top: 0.75rem;
-}
-
-.on-this-page .plain-list li {
-  padding: 0.6rem 0;
-  border-bottom: 1px solid rgba(2, 6, 23, 0.06);
-}
-
-.on-this-page .plain-list li:last-child {
-  border-bottom: 0;
-}
-
-.on-this-page .plain-list a {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-weight: 600;
-  color: #2563eb;
-  text-decoration: none;
-}
-
-.on-this-page .plain-list a::before {
-  content: "•";
-  color: #2563eb;
-  font-size: 1.2rem;
-  line-height: 1;
-}
-
-.on-this-page .plain-list a:hover {
-  text-decoration: underline;
-}
-
-/*Checkboxes on homepage*/
-
-.task-list input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  accent-color: #2563eb;
-  cursor: pointer;
-}
-
-/* Task list resposnive mobile adjustments*/
-
-
-@media (max-width: 500px) {
   .task-list label {
-    grid-template-columns: 18px 1fr;
-    grid-template-areas:
-      "check text"
-      "meta meta";
-    align-items: start;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+    font-weight: 500;
   }
 
   .task-list input[type="checkbox"] {
-    grid-area: check;
-    margin-top: 0.2rem;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--brand-1);
+  }
+
+  .task-list label {
+    display: grid;
+    grid-template-columns: 18px 1fr auto;
+    align-items: center;
+    gap: 0.75rem;
   }
 
   .task-text {
-    grid-area: text;
+    font-weight: 600;
   }
 
   .task-meta {
-    grid-area: meta;
-    justify-content: flex-start;
-    margin-left: 2.1rem;
-    margin-top: 0.4rem;
-  }
-}
-
-/* Knowledge base responsive*/
-
-@media (max-width: 480px) {
-  .container {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
-
-/*Padding addition*/
-
-@media (max-width: 768px) {
-  .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
-  .layout {
-    padding-left: 0;
-    padding-right: 0;
+  .pill {
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-weight: 600;
   }
-}
 
-@media (max-width: 768px) {
+  .pill-high {
+    border-color: rgba(220, 38, 38, 0.35);
+    background: rgba(220, 38, 38, 0.10);
+    color: #7f1d1d;
+  }
+
+  .pill-med {
+    border-color: rgba(245, 158, 11, 0.35);
+    background: rgba(245, 158, 11, 0.12);
+    color: #7c2d12;
+  }
+
+  .pill-low {
+    border-color: rgba(34, 197, 94, 0.35);
+    background: rgba(34, 197, 94, 0.12);
+    color: #14532d;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .site-nav {
+    display: block;
+  }
+
+  /* Card for time and attendance section only*/
+
+  .attendance-page .card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e5e7eb;
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    margin: 0 0 14px;
+    font-size: 18px;
+    font-weight: 650;
+    color: #111827;
+  }
+
+  .attendance-page .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    background: #f9fafb;
+    border: 1px solid #eef2f7;
+    border-radius: 10px;
+    border-bottom: 1px solid #eef2f7
+  }
+
+  .attendance-page .label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6b7280;
+  }
+
+  .attendance-page .value {
+    text-align: right;
+    font-size: 14px;
+    font-weight: 650;
+    color: #111827;
+  }
+
+  .value.positive {
+    color: #047857;
+  }
+
+  .value.negative {
+    color: #b91c1c;
+  }
+
+  .attendance-page .attendance-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 6px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 14px;
+  }
+
+  .attendance-page .attendance-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #eef2f7;
+    color: #111827;
+    text-align: right;
+
+  }
+
+  .attendance-page .attendance-table td:first-child {
+    text-align: left;
+  }
+
+
+  .attendance-page .attendance-table td.negative {
+    color: #b91c1c;
+  }
+
+  .attendance-table tbody tr:nth-child(even) {
+    background: #fcfcfd;
+  }
+
+  .attendance-table tbody tr:hover {
+    background: #eff6ff;
+  }
+
+  .attendance-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  td.positive {
+    color: #047857;
+    font-weight: 700;
+  }
+
+  td.negative {
+    color: #b91c1c;
+    font-weight: 700;
+  }
+
+  .attendance-page .clock-section {
+    margin-top: 12px;
+    padding-top: 12px;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    max-width: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 14px 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    gap: 12px;
+    flex-direction: column;
+    ;
+  }
+
+  .attendance-page .clock-status {
+    margin: 0;
+    font-size: 14px;
+    color: #4b5563;
+  }
+
+  #clockStatus {
+    font-weight: 700;
+    color: #111827;
+  }
+
+  .attendance-page .clock-btn {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .clock-btn.stop {
+    background: #dc2626;
+  }
+
+  .clock-btn:hover {
+    opacity: 0.95;
+  }
+
+  @media (max-width: 700px) {
+    .attendance-page .info-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+    }
+
+    .attendance-page .attendance-table th,
+    .attendance-page .attendance-table td {
+      padding: 8px 6px;
+      font-size: 13px;
+    }
+
+    .attendance-page .clock-section {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .attendance-page .clock-btn {
+      width: 100%;
+    }
+  }
+
+  .section-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    background: #2563eb;
+  }
+
+  .section-head+* {
+    border-top: none !important;
+  }
+
   .card {
-    margin-left: 0;
-    margin-right: 0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   }
-}
+
+  .card>.info-row:first-of-type {
+    border-top: none !important;
+  }
+
+  .section-title {
+    border: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+
+  }
+
+  .card>.info-row:first-of-type {
+    border-top: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .card {
+    background-clip: padding-box;
+  }
+
+  .card .label,
+  .card .clock-status,
+  .card th {
+    color: #0b1220;
+  }
+
+  .attendance-page .attendance-table th {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #0b1220;
+    text-align: left;
+    padding: 12px 14px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb
+  }
+
+  .section-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .section-head h2 {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  /*List styling */
+
+  .card ul:not(.announcements):not(.task-list):not(.action-list):not(.plain-list):not(.skill-list) {
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0 0;
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .card ul:not(.announcements):not(.task-list):not(.action-list):not(.plain-list):not(.skill-list) li {
+    margin: 0;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid rgba(2, 6, 23, 0.06);
+    border-radius: 12px;
+    background: rgba(37, 99, 235, 0.04);
+    font-weight: 600;
+  }
+
+  /*Homepage hero*/
+  .hero-card {
+    padding: 2rem;
+    background: #ffffff;
+    border: 1px solid rgba(2, 6, 23, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(2, 6, 23, 0.08);
+  }
+
+  /*Heading*/
+
+  .hero-card {
+    padding: 2rem;
+    background: #ffffff;
+    border: 1px solid rgba(2, 6, 23, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(2, 6, 23, 0.08);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-card h2 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin-bottom: 0.4rem;
+  }
+
+  /*Short intro text*/
+  .hero-card p {
+    max-width: 70ch;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: #334155;
+    margin-bottom: 1rem;
+  }
+
+  /*Last updated*/
+  .hero-card .last-updated {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.35rem 0.65rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    border-radius: 999px;
+  }
+
+  /*Gradient accent on welcome homepage box*/
+  .hero-card::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -25%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle at center,
+        rgba(37, 99, 235, 0.32),
+        rgba(37, 99, 235, 0.14),
+        rgba(37, 99, 235, 0.04),
+        transparent 75%);
+    pointer-events: none;
+  }
+
+  /* Stronger card header */
+  .card h2 {
+    padding-bottom: 0.85rem;
+    margin-bottom: 1.1rem;
+    border-bottom: 1px solid rgba(2, 6, 23, 0.08);
+  }
+
+  /* Footer styling*/
+
+  .site-footer {
+    background: #f1f5f9;
+    color: #475569;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 3rem;
+  }
+
+  .site-footer .container {
+    padding: 1.25rem 1rem;
+  }
+
+  .site-footer p {
+    margin: 0;
+    font-size: 0.85rem;
+    text-align: center;
+    opacity: 0.85;
+  }
+
+  /* System overview homepage*/
+
+  .card.system-overview {
+    background: linear-gradient(135deg,
+        rgba(37, 99, 235, 0.06),
+        rgba(255, 255, 255, 0.95));
+    border-left: 5px solid #2563eb;
+  }
+
+  /* Leave summary on time and attendance page*/
+
+  .leave-summary {
+    background: linear-gradient(135deg,
+        rgba(37, 99, 235, 0.06),
+        rgba(255, 255, 255, 0.95));
+  }
+
+  .stat-card {
+    background: #fff;
+    border: 1px solid rgba(2, 6, 23, 0.08);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .stat-label {
+    display: block;
+    font-size: 0.85rem;
+    color: #475569;
+    margin-bottom: 0.25rem;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #2563eb;
+  }
+
+  /* Fix issues with line appearing under headings twice*/
+
+  .section-head h2,
+  .section-head .section-heading {
+    border-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Menu fix for mobile*/
+
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: inline-block;
+    }
+
+    .site-nav {
+      display: none;
+    }
+
+    .site-nav.is-open {
+      display: block;
+    }
+
+    .auth-actions {
+      display: none;
+    }
+
+    .nav-list {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .nav-link {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .site-header {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  /* Mobile leave section tidy up*/
+
+  @media (max-width: 700px) {
+    .grid-3 {
+      grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+      text-align: left;
+    }
+
+    .stat-value {
+      font-size: 1.25rem;
+    }
+  }
+
+  /* Mobile profile tidy up boxes */
+
+  @media (max-width: 700px) {
+    .grid-2 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Mobile time and attendance tidy up*/
+
+  @media (max-width: 700px) {
+    .table-wrap {
+      margin: 0;
+      padding: 0.5rem;
+    }
+
+    .attendance-page .attendance-table th:nth-child(n+2),
+    .attendance-page .attendance-table td:nth-child(n+2) {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .layout>*>.card {
+      margin-top: 1.25rem;
+    }
+
+    .layout>*>.card:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .card {
+    margin: 1.25rem 0;
+  }
+
+  /*On this page, knowledge base*/
+
+  .on-this-page .plain-list {
+    margin-top: 0.75rem;
+  }
+
+  .on-this-page .plain-list li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(2, 6, 23, 0.06);
+  }
+
+  .on-this-page .plain-list li:last-child {
+    border-bottom: 0;
+  }
+
+  .on-this-page .plain-list a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .on-this-page .plain-list a::before {
+    content: "•";
+    color: #2563eb;
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .on-this-page .plain-list a:hover {
+    text-decoration: underline;
+  }
+
+  /*Checkboxes on homepage*/
+
+  .task-list input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #2563eb;
+    cursor: pointer;
+  }
+
+  /* Task list resposnive mobile adjustments*/
 
 
-/* Stops horizontal scroll on mobile/tablet devices*/
+  @media (max-width: 500px) {
+    .task-list label {
+      grid-template-columns: 18px 1fr;
+      grid-template-areas:
+        "check text"
+        "meta meta";
+      align-items: start;
+    }
 
-html,
-body {
-  overflow-x: hidden;
-}
+    .task-list input[type="checkbox"] {
+      grid-area: check;
+      margin-top: 0.2rem;
+    }
+
+    .task-text {
+      grid-area: text;
+    }
+
+    .task-meta {
+      grid-area: meta;
+      justify-content: flex-start;
+      margin-left: 2.1rem;
+      margin-top: 0.4rem;
+    }
+  }
+
+  /* Knowledge base responsive*/
+
+  @media (max-width: 480px) {
+    .container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  /*Padding addition*/
+
+  @media (max-width: 768px) {
+    .container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .layout {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  /* Stops horizontal scroll on mobile/tablet devices*/
+
+  html,
+  body {
+    overflow-x: hidden;
+  }

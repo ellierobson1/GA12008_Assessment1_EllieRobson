@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,183 +12,185 @@
 
 <body>
 
-<div class="topbar">
-  <header class="site-header">
-    <div class="container header-inner">
+  <div class="topbar">
+    <header class="site-header">
+      <div class="container header-inner">
 
-      <a href="index.html" class="logo-link" aria-label="Go to home">
-        <img src="assets/images/logo.png" alt="HRIS logo" class="site-logo">
-      </a>
+        <a href="index.html" class="logo-link" aria-label="Go to home">
+          <img src="assets/images/logo.png" alt="HRIS logo" class="site-logo">
+        </a>
 
-      <div class="auth-actions">
-       <span class="auth-name">Ellie Robson</span>
-       <a class="auth-btn" href="index.html">Log out</a>
-     </div>
+        <div class="auth-actions">
+          <span class="auth-name">Ellie Robson</span>
+          <a class="auth-btn" href="index.html">Log out</a>
+        </div>
 
-     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
-       ☰ Menu
-     </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+          ☰ Menu
+        </button>
+      </div>
+    </header>
+
+    <nav class="site-nav" id="mobile-nav" aria-label="Primary">
+      <div class="container">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="info.html">Knowledge Base</a></li>
+          <li><a class="nav-link" href="profile.html" aria-current="page">Profile</a></li>
+          <li><a class="nav-link" href="attendance.html">Time &amp; Attendance</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
   </div>
-</header>
-      
-<nav class="site-nav" id="mobile-nav" aria-label="Primary">
-  <div class="container">
-    <ul class="nav-list">
-      <li><a class="nav-link" href="index.html">Home</a></li>
-      <li><a class="nav-link" href="info.html">Knowledge Base</a></li>
-      <li><a class="nav-link" href="profile.html" aria-current="page">Profile</a></li>
-      <li><a class="nav-link" href="attendance.html">Time &amp; Attendance</a></li>
-      <li><a class="nav-link" href="contact.html">Contact</a></li>
-    </ul>
-  </div>
- </nav>
-</div>
 
-<main class="container">
+  <main class="container">
 
     <div class="alert alert-warning">
-  <strong>Action required:</strong> You have mandatory training expiring within the next 14 days.
-  Please complete the required refresher to remain compliant.
-</div>
+      <strong>Action required:</strong> You have mandatory training expiring within the next 14 days.
+      Please complete the required refresher to remain compliant.
+    </div>
 
-  <nav class="breadcrumbs" aria-label="Breadcrumb">
-    <a href="index.html">Home</a> / <span>Profile</span>
-  </nav>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="index.html">Home</a> / <span>Profile</span>
+    </nav>
 
-  <section class="card">
-    <h2>Employee Profile</h2>
-    <p class="muted">This section provides an overview of your employee profile, including your role, key areas of responsibility, and the qualifications and experience relevant to your position.</p>
-  </section>
+    <section class="card">
+      <h2>Employee Profile</h2>
+      <p class="muted">This section provides an overview of your employee profile, including your role, key areas of
+        responsibility, and the qualifications and experience relevant to your position.</p>
+    </section>
 
-   <section class="card">
-  <h2>My Tasks</h2>
+    <section class="card">
+      <h2>My Tasks</h2>
 
-  <ul class="task-list">
-    <li>
-      <label>
-        <input type="checkbox">
-        <span class="task-text">Complete Data Protection refresher</span>
-        <span class="task-meta">
-          <span class="pill pill-high">High</span>
-          <span class="pill">Due 31 Jan</span>
-        </span>
-      </label>
-    </li>
+      <ul class="task-list">
+        <li>
+          <label>
+            <input type="checkbox">
+            <span class="task-text">Complete Data Protection refresher</span>
+            <span class="task-meta">
+              <span class="pill pill-high">High</span>
+              <span class="pill">Due 31 Jan</span>
+            </span>
+          </label>
+        </li>
 
-    <li>
-      <label>
-        <input type="checkbox">
-        <span class="task-text">Review updated Annual Leave policy</span>
-        <span class="task-meta">
-          <span class="pill pill-med">Medium</span>
-          <span class="pill">Due 5 Feb</span>
-        </span>
-      </label>
-    </li>
+        <li>
+          <label>
+            <input type="checkbox">
+            <span class="task-text">Review updated Annual Leave policy</span>
+            <span class="task-meta">
+              <span class="pill pill-med">Medium</span>
+              <span class="pill">Due 5 Feb</span>
+            </span>
+          </label>
+        </li>
 
-    <li>
-      <label>
-        <input type="checkbox">
-        <span class="task-text">Update emergency contact details</span>
-        <span class="task-meta">
-          <span class="pill pill-low">Low</span>
-          <span class="pill">No due date</span>
-        </span>
-      </label>
-    </li>
-  </ul>
-</section>
+        <li>
+          <label>
+            <input type="checkbox">
+            <span class="task-text">Update emergency contact details</span>
+            <span class="task-meta">
+              <span class="pill pill-low">Low</span>
+              <span class="pill">No due date</span>
+            </span>
+          </label>
+        </li>
+      </ul>
+    </section>
 
 
-  <div class="grid-2">
-    <section class="card profile-card">
-      <h3>Employee Details</h3>
+    <div class="grid-2">
+      <section class="card profile-card">
+        <h3>Employee Details</h3>
+        <ul class="detail-list">
+          <li><span class="label">Name</span><span class="value">Ellie Robson</span></li>
+          <li><span class="label">Role</span><span class="value">HR Assistant</span></li>
+          <li><span class="label">Department</span><span class="value">Human Resources</span></li>
+          <li><span class="label">Employment Type</span><span class="value">Full-time</span></li>
+          <li><span class="label">Status</span><span class="value">Active</span></li>
+          <li><span class="label">Salary</span><span class="value">£32,000</span></li>
+        </ul>
+      </section>
+
+
+      <section class="card profile-card">
+        <h3>Skills &amp; Training</h3>
+        <ul>
+          <li>HR onboarding procedures</li>
+          <li>Data protection awareness</li>
+          <li>Employee support and communication</li>
+          <li>Basic reporting and record keeping</li>
+          <li>Employee profile management</li>
+          <li>Training Compliance</li>
+          <li>Data entry</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <section class="card">
+      <h3>Training Courses Status</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Status</th>
+            <th>Due</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Data Protection</td>
+            <td><span class="status-pill">Completed</span></td>
+            <td>Jan 2026</td>
+          </tr>
+
+          <tr>
+            <td>Health &amp; Safety</td>
+            <td><span class="status-pill">Completed</span></td>
+            <td>Aug 2026</td>
+          </tr>
+
+          <tr>
+            <td>Equality &amp; Diversity</td>
+            <td><span class="status-pill status-due">Due</span></td>
+            <td>Mar 2026</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+    <section class="card">
+      <h3>Emergency Contact</h3>
       <ul class="detail-list">
-        <li><span class="label">Name</span><span class="value">Ellie Robson</span></li>
-        <li><span class="label">Role</span><span class="value">HR Assistant</span></li>
-        <li><span class="label">Department</span><span class="value">Human Resources</span></li>
-        <li><span class="label">Employment Type</span><span class="value">Full-time</span></li>
-        <li><span class="label">Status</span><span class="value">Active</span></li>
-        <li><span class="label">Salary</span><span class="value">£32,000</span></li>
+        <li><span class="label">Name</span><span class="value">James Robson</span></li>
+        <li><span class="label">Relationship</span><span class="value">Brother</span></li>
+        <li><span class="label">Phone</span><span class="value">07765488234</span></li>
       </ul>
     </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Core HR — Designed and developed by Ellie.</p>
+    </div>
+  </footer>
 
-    <section class="card profile-card">
-      <h3>Skills &amp; Training</h3>
-      <ul>
-        <li>HR onboarding procedures</li>
-        <li>Data protection awareness</li>
-        <li>Employee support and communication</li>
-        <li>Basic reporting and record keeping</li>
-        <li>Employee profile management</li>
-        <li>Training Compliance</li>
-        <li>Data entry</li>
-      </ul>
-    </section>
+  <script>
+    const btn = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".site-nav");
 
-  </div>
-
-  <section class="card">
-  <h3>Training Courses Status</h3>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Course</th>
-        <th>Status</th>
-        <th>Due</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <td>Data Protection</td>
-        <td><span class="status-pill">Completed</span></td>
-        <td>Jan 2026</td>
-      </tr>
-
-      <tr>
-        <td>Health &amp; Safety</td>
-        <td><span class="status-pill">Completed</span></td>
-        <td>Aug 2026</td>
-      </tr>
-
-      <tr>
-        <td>Equality &amp; Diversity</td>
-        <td><span class="status-pill status-due">Due</span></td>
-        <td>Mar 2026</td>
-      </tr>
-    </tbody>
-  </table>
-
-</section>
-<section class="card">
-  <h3>Emergency Contact</h3>
-  <ul class="detail-list">
-    <li><span class="label">Name</span><span class="value">James Robson</span></li>
-    <li><span class="label">Relationship</span><span class="value">Brother</span></li>
-    <li><span class="label">Phone</span><span class="value">07765488234</span></li>
-  </ul>
-</section>
-</main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>&copy; 2026 Core HR — Designed and developed by Ellie.</p>
-      </div>
-    </footer>
-
-    <script>
-      const btn = document.querySelector(".menu-toggle");
-      const nav = document.querySelector(".site-nav");
-
-     if (btn && nav) {
+    if (btn && nav) {
       btn.addEventListener("click", () => {
         const open = nav.classList.toggle("is-open");
         btn.setAttribute("aria-expanded", open ? "true" : "false");
       });
     }
   </script>
- </body>
+</body>
+
 </html>

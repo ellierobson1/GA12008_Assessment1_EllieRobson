@@ -5,7 +5,7 @@
 :root {
   --bg: #eef6ff;
   --text: #0b1220;
-  --muted: #0b1220;
+  --muted: #475569;
   --brand-1: #3b82f6;
   --brand-2: #2563eb;
   --card: #ffffff;
@@ -17,7 +17,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
-  background: var(--bg);
+  background: linear-gradient(180deg, #eef6ff 0%, #f7fbff 100%);
   color: var(--text);
 }
 
@@ -27,11 +27,6 @@ body {
   padding: 1.25rem;
 }
 
-body {
-  background: linear-gradient(180deg, #eef6ff 0%, #f7fbff 100%);
-}
-
-
 .muted {
   color: var(--muted);
 }
@@ -40,10 +35,9 @@ body {
   font-size: 0.9rem;
 }
 
-/*Header*/
+/* Header */
 .site-header {
   background: #2563eb;
-  border-bottom: 1px solid #e5e7eb;
   top: 0;
   z-index: 1000;
   border-bottom: 0;
@@ -82,7 +76,7 @@ body {
   z-index: 2000;
 }
 
-/*Logo*/
+/* Logo */
 .site-logo {
   height: 80px;
   filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.15));
@@ -91,7 +85,7 @@ body {
 
 }
 
-/*Title block*/
+/* Title block */
 .header-left {
   display: flex;
   flex-direction: column;
@@ -104,7 +98,7 @@ body {
 }
 
 
-/*Logged in user*/
+/* Logged in user */
 .auth-actions {
   display: flex;
   align-items: center;
@@ -135,8 +129,7 @@ body {
   background: rgba(255, 255, 255, 0.15);
 }
 
-/*Navigation*/
-
+/* Navigation */
 .site-nav {
   background: #1e40af;
   top: 72px;
@@ -179,7 +172,7 @@ body {
   padding-bottom: 0.5rem;
 }
 
-/*Breadcrumbs at the top of each page*/
+/* Breadcrumbs at the top of each page */
 .breadcrumbs {
   margin: 0.75rem 0 0.25rem;
   color: var(--muted);
@@ -195,7 +188,7 @@ body {
   text-decoration: underline;
 }
 
-/*Cards site wide*/
+/* Cards site wide */
 .card {
   background: #fff;
   border: 1px solid rgba(2, 6, 23, 0.08);
@@ -203,6 +196,7 @@ body {
   padding: 1.4rem;
   margin: 1.25rem 0;
   box-shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
 .profile-card {
@@ -214,8 +208,7 @@ body {
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.10);
 }
 
-/*Dashboard card header accent */
-
+/* Dashboard card header accent */
 .card h2 {
   font-size: 1.4rem;
   font-weight: 700;
@@ -246,8 +239,7 @@ body {
   margin: 0 0 0.5rem;
 }
 
-/*Announcements style on*/
-
+/* Announcements list */
 .announcements-card .announcements {
   max-height: 520px;
   overflow-y: auto;
@@ -309,7 +301,7 @@ body {
   box-shadow: 0 10px 20px rgba(2, 6, 23, 0.10);
 }
 
-/*GRIDS*/
+/* Grids */
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -322,7 +314,7 @@ body {
   gap: 1rem;
 }
 
-/*KEY INFO SIDE INFORMATION*/
+/* Key info side information */
 .layout {
   display: grid;
   grid-template-columns: 1fr 320px;
@@ -356,7 +348,7 @@ body {
   background: rgba(59, 130, 246, 0.1);
 }
 
-/*Buttons*/
+/* Buttons */
 .btn {
   display: inline-block;
   padding: 0.75rem 1rem;
@@ -391,7 +383,7 @@ body {
   background: rgba(59, 130, 246, 0.10);
 }
 
-/*Lists*/
+/* Lists */
 .card ul {
   margin: 0.5rem 0 0;
   padding-left: 1.1rem;
@@ -435,7 +427,7 @@ body {
   font-weight: 500;
 }
 
-/*Quick actions homepage*/
+/* Quick actions homepage */
 .action-list {
   list-style: none;
   padding: 0;
@@ -469,8 +461,7 @@ body {
   background: rgba(59, 130, 246, 0.10);
 }
 
-/*Tables*/
-
+/* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -492,8 +483,7 @@ th {
   font-size: 0.95rem;
 }
 
-/*Profile details list*/
-
+/* Profile details list */
 .detail-list {
   list-style: none;
   padding: 0;
@@ -517,7 +507,7 @@ th {
   color: var(--muted);
 }
 
-/*Status boxes*/
+/* Status boxes*/
 .status-pill {
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
@@ -526,14 +516,14 @@ th {
   display: inline-block;
 }
 
-/*Completed green */
+/* Completed green */
 .status-pill {
   background: rgba(34, 197, 94, 0.18);
   border: 1px solid rgba(34, 197, 94, 0.4);
   color: #065f46;
 }
 
-/*Expiring red*/
+/* Expiring red */
 .status-due {
   background: #fee2e2;
   border: 1px solid #dc2626;
@@ -544,7 +534,7 @@ th {
   margin-top: 1rem;
 }
 
-/*Contact search and form style)*/
+/* Contact search and form style */
 .searchbar {
   display: flex;
   gap: 0.5rem;
@@ -609,7 +599,7 @@ button:hover {
   opacity: 0.9;
 }
 
-/*Alerts Action required*/
+/* Alerts Action required */
 .alert {
   padding: 1rem;
   border-radius: 12px;
@@ -623,7 +613,7 @@ button:hover {
   color: #7f1d1d;
 }
 
-/*FAQs*/
+/* FAQs */
 .faq {
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -642,7 +632,7 @@ button:hover {
 
 }
 
-  .faq summary:-webkit-details-marker {
+.faq summary::-webkit-details-marker {
   display: none;
 }
 
@@ -655,7 +645,7 @@ button:hover {
   transform: translateY(-50%);
 }
 
-  .faq[open] summary::after {
+ .faq[open] summary::after {
     content: "−";
   }
 
@@ -664,7 +654,7 @@ button:hover {
     color: var(--muted);
   }
 
-  /*Task checklist*/
+  /* Task checklist */
   .task-list {
     list-style: none;
     padding: 0;
@@ -744,12 +734,7 @@ button:hover {
     display: none;
   }
 
-  .site-nav {
-    display: block;
-  }
-
-  /* Card for time and attendance section only*/
-
+  /* Card for time and attendance section only */
   .attendance-page .card {
     background: #ffffff;
     border-radius: 12px;
@@ -863,7 +848,6 @@ button:hover {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
     gap: 12px;
     flex-direction: column;
-    ;
   }
 
   .attendance-page .clock-status {
@@ -896,6 +880,7 @@ button:hover {
     opacity: 0.95;
   }
 
+  /* Responsive adjustments */
   @media (max-width: 700px) {
     .attendance-page .info-row {
       flex-direction: column;
@@ -927,14 +912,6 @@ button:hover {
   }
 
   .section-head+* {
-    border-top: none !important;
-  }
-
-  .card {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  }
-
-  .card>.info-row:first-of-type {
     border-top: none !important;
   }
 
@@ -989,8 +966,7 @@ button:hover {
     margin-bottom: 0;
   }
 
-  /*List styling */
-
+  /* List styling */
   .card ul:not(.announcements):not(.task-list):not(.action-list):not(.plain-list):not(.skill-list) {
     list-style: none;
     padding: 0;
@@ -1008,17 +984,7 @@ button:hover {
     font-weight: 600;
   }
 
-  /*Homepage hero*/
-  .hero-card {
-    padding: 2rem;
-    background: #ffffff;
-    border: 1px solid rgba(2, 6, 23, 0.08);
-    border-radius: 16px;
-    box-shadow: 0 12px 32px rgba(2, 6, 23, 0.08);
-  }
-
-  /*Heading*/
-
+  /* Hero heading */
   .hero-card {
     padding: 2rem;
     background: #ffffff;
@@ -1036,7 +1002,7 @@ button:hover {
     margin-bottom: 0.4rem;
   }
 
-  /*Short intro text*/
+  /* Short intro text */
   .hero-card p {
     max-width: 70ch;
     font-size: 1rem;
@@ -1045,7 +1011,7 @@ button:hover {
     margin-bottom: 1rem;
   }
 
-  /*Last updated*/
+  /* Last updated */
   .hero-card .last-updated {
     display: inline-block;
     margin-top: 0.75rem;
@@ -1058,7 +1024,7 @@ button:hover {
     border-radius: 999px;
   }
 
-  /*Gradient accent on welcome homepage box*/
+  /* Gradient accent on welcome homepage box */
   .hero-card::after {
     content: "";
     position: absolute;
@@ -1074,15 +1040,14 @@ button:hover {
     pointer-events: none;
   }
 
-  /* Stronger card header */
+  /*Stronger card header*/
   .card h2 {
     padding-bottom: 0.85rem;
     margin-bottom: 1.1rem;
     border-bottom: 1px solid rgba(2, 6, 23, 0.08);
   }
 
-  /* Footer styling*/
-
+  /* Footer styling */
   .site-footer {
     background: #f1f5f9;
     color: #475569;
@@ -1101,8 +1066,7 @@ button:hover {
     opacity: 0.85;
   }
 
-  /* System overview homepage*/
-
+  /* System overview homepage */
   .card.system-overview {
     background: linear-gradient(135deg,
         rgba(37, 99, 235, 0.06),
@@ -1110,8 +1074,7 @@ button:hover {
     border-left: 5px solid #2563eb;
   }
 
-  /* Leave summary on time and attendance page*/
-
+  /* Leave summary on time and attendance page */
   .leave-summary {
     background: linear-gradient(135deg,
         rgba(37, 99, 235, 0.06),
@@ -1139,8 +1102,7 @@ button:hover {
     color: #2563eb;
   }
 
-  /* Fix issues with line appearing under headings twice*/
-
+  /* Prevent double borders under headings */
   .section-head h2,
   .section-head .section-heading {
     border-bottom: 0 !important;
@@ -1148,8 +1110,7 @@ button:hover {
     margin-bottom: 0 !important;
   }
 
-  /* Menu fix for mobile*/
-
+  /* Mobile nav */
   @media (max-width: 768px) {
     .menu-toggle {
       display: inline-block;
@@ -1185,8 +1146,7 @@ button:hover {
     }
   }
 
-  /* Mobile leave section tidy up*/
-
+  /* Mobile leave section tidy up */
   @media (max-width: 700px) {
     .grid-3 {
       grid-template-columns: 1fr;
@@ -1202,15 +1162,13 @@ button:hover {
   }
 
   /* Mobile profile tidy up boxes */
-
   @media (max-width: 700px) {
     .grid-2 {
       grid-template-columns: 1fr;
     }
   }
 
-  /* Mobile time and attendance tidy up*/
-
+  /* Mobile time and attendance tidy up */
   @media (max-width: 700px) {
     .table-wrap {
       margin: 0;
@@ -1233,11 +1191,7 @@ button:hover {
     }
   }
 
-  .card {
-    margin: 1.25rem 0;
-  }
-
-  /*On this page, knowledge base*/
+  /* On this page, knowledge base */
 
   .on-this-page .plain-list {
     margin-top: 0.75rem;
@@ -1272,8 +1226,7 @@ button:hover {
     text-decoration: underline;
   }
 
-  /*Checkboxes on homepage*/
-
+  /* Checkboxes on homepage */
   .task-list input[type="checkbox"] {
     width: 18px;
     height: 18px;
@@ -1281,9 +1234,7 @@ button:hover {
     cursor: pointer;
   }
 
-  /* Task list resposnive mobile adjustments*/
-
-
+  /* Task list responsive mobile adjustments */
   @media (max-width: 500px) {
     .task-list label {
       grid-template-columns: 18px 1fr;
@@ -1310,7 +1261,7 @@ button:hover {
     }
   }
 
-  /* Knowledge base responsive*/
+  /* Knowledge base responsive */
 
   @media (max-width: 480px) {
     .container {
@@ -1319,7 +1270,7 @@ button:hover {
     }
   }
 
-  /*Padding addition*/
+  /* Responsive padding */
 
   @media (max-width: 768px) {
     .container {
@@ -1340,8 +1291,7 @@ button:hover {
     }
   }
 
-  /* Stops horizontal scroll on mobile/tablet devices*/
-
+  /* Stops horizontal scroll on mobile/tablet devices */
   html,
   body {
     overflow-x: hidden;

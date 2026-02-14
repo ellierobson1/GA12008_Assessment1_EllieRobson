@@ -3,11 +3,11 @@
 
 **Student Name:** Ellie Robson  
 **Module:** Information Systems Development and Management  
-**Assessment:** Assessment 1 – Designing a Web-Based BIS Interface  
+**Assessment:** Assessment 1 – Designing a Web Based BIS Interface  
 
 ## Project Overview
 
-This project is a static web-based **Human Resource Information System (HRIS)** interface designed to support employees and managers within an organisation.
+This project is a static web-based **Human Resource Information System (HRIS)** interface designed to support users such as employees and managers within an organisation.
 
 The system provides access to key HR information such as:
 - Company policies and procedures
@@ -24,12 +24,14 @@ The website represents a **Business Information System interface** and focuses o
 - HR staff  
 - Line managers  
 - Payroll and administrative staff  
+- Operation staff 
+- IT and system administrators
 
 ## Technologies Used
 
 - HTML5  
 - CSS3  
-- No backend or database (static interface only)
+- JavaScript 
 
 ## Website Pages
 
@@ -37,7 +39,7 @@ The website represents a **Business Information System interface** and focuses o
 - **Knowledge Base:** Policies, benefits, and training information  
 - **Profile:** Employee profile and training status  
 - **Time & Attendance:** Attendance summary and leave overview  
-- **Contact:** HR enquiry form (static, no processing)
+- **Contact:** HR enquiry form (static)
 
 
 ## How to View the Website
@@ -51,4 +53,4 @@ View via GitHub Pages:  https://ellierobson1.github.io/GA12008_Assessment1_Ellie
 
 ## Notes
 
-This project was created as part of a first-year university assignment and demonstrates the application of basic Business Information Systems concepts using HTML and CSS.
+This project was created as part of a university assignment and demonstrates the application of basic Business Information Systems concepts using HTML, CSS and a small bit of JavaScript.
